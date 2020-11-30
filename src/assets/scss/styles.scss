@@ -1,6 +1,16 @@
 //General
 @import 'general/variables';
 @import 'general/iconfont';
+@import 'general/colors';
 
 //Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+//Layouts
+@import 'layouts/header';
+
+//Components
+@import 'components/nav';
+
+//Atoms
+@import 'atoms/link'; 

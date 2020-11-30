@@ -1,0 +1,36 @@
+// components/_nav.scss
+#{$project}_nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        padding: 0 1rem;
+        margin: 0 1rem;
+        border-radius: 12px;
+
+        .am_nav__link {
+            padding-right: .5rem;
+
+            &.rayons {
+                @include icon(burger);
+                &:before {
+                    float: right;
+                }
+            }
+        }
+
+        &.active {
+            background-color: $black-font;
+            .am_nav__link {
+                color: $white;
+            }
+        }
+
+        #{$project}_logo {
+            width: 100px;
+        }
+    }
+}

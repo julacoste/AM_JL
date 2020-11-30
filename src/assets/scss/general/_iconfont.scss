@@ -28,6 +28,10 @@
         $char: "\e92a";
     }
 
+    @if $filename == burger {
+        $char: "\e915";
+    }
+
     @return $char;
 }
 
