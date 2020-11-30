@@ -7,12 +7,14 @@ const concat = require('gulp-concat');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 // Paths
 const files = {
     scssPath: 'src/assets/scss/**/*.scss',
     jsPath: 'src/assets/js/**/*.js',
+    imgPath: 'src/assets/img/*.*',
     templatePath: '*.html'
 }
 
@@ -36,6 +38,15 @@ function jsTask() {
     .pipe(dest('dist/js'));
 }
 
+//Images
+function imgTask() {
+    return src([
+        files.imgPath
+    ])
+    .pipe(imagemin())
+    .pipe(dest('./dist/img'))
+}
+
 //Watcher
 function watchTask() {
     browserSync.init({
@@ -46,16 +57,17 @@ function watchTask() {
     watch([
         files.scssPath,
         files.jsPath,
+        files.imgPath,
         files.templatePath
     ],
         series(
-            parallel(scssTask, jsTask)
+            parallel(scssTask, jsTask, imgTask)
         )
     ).on('change', browserSync.reload);
 }
 
 // Default
 exports.default = series(
-    parallel(scssTask, jsTask),
+    parallel(scssTask, jsTask, imgTask),
     watchTask
 );
