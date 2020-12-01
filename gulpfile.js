@@ -6,14 +6,14 @@ const postcss = require('gulp-postcss');
 const concat = require('gulp-concat');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 // Paths
 const files = {
     scssPath: 'src/assets/scss/**/*.scss',
-    jsPath: 'src/assets/js/**/*.js',
+    jsPath: 'src/assets/js/*.js',
     imgPath: 'src/assets/img/*.*',
     templatePath: '*.html'
 }
@@ -33,7 +33,7 @@ function jsTask() {
     return src([
         files.jsPath
     ])
-    .pipe(concat('all.js'))
+    .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(dest('dist/js'));
 }
