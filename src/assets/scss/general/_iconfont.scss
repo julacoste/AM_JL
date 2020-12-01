@@ -32,6 +32,10 @@
         $char: "\e915";
     }
 
+    @if $filename == chevron-right {
+        $char: "\e90b";
+    }
+
     @return $char;
 }
 

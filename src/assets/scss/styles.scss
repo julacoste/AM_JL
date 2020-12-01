@@ -2,6 +2,7 @@
 @import 'general/variables';
 @import 'general/iconfont';
 @import 'general/colors';
+@import 'general/utils';
 
 //Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -11,6 +12,7 @@
 
 //Components
 @import 'components/nav';
+@import 'components/band';
 
 //Atoms
 @import 'atoms/link'; 

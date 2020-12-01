@@ -1,0 +1,75 @@
+// components/_band.scss
+#{$project}_band {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -35%;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transform: translate3d( -35% , 0, 0 );
+    transition: transform .25s ease-in-out;
+
+
+    &.active {
+        transform: translate3d( 0, 0, 0 );
+        left: 0;
+        opacity: 1;
+        width: 100%;
+
+        #{$project}_band__overlay {
+            opacity: 1;
+        }
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    
+    &__content {
+        background-color: $white;
+        z-index: 2;
+        flex: 0 0 35%;
+        padding: 40px 0;
+    }
+
+    &__nav {
+        padding: 15px 0;
+        list-style: none;
+    }
+
+    &__item {
+        border-bottom: 1px solid $grey-light;
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 20px 0 20px 10px;
+
+        &--icon {
+            position: relative;
+            @include icon(chevron-right);
+            &:before {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 10px;
+            }
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+}
