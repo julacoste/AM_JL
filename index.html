@@ -10,33 +10,124 @@
     <link rel="stylesheet" href="./dist/css/styles.css" type="text/css">
 </head>
 
-<body>  
-    <header>
-        <div class="am_header">
-            <nav class="am_header__nav">
-                <ul class="am_nav">
-                    <li class="am_nav__item">
-                        <a class="am_nav__link logo" href="#"><img class="am_logo" src="dist/img/aurore-market-logo.jpg" alt="Aurore Market | Magasin bio en ligne, votre magasin Bio en ligne jusqu'à 50 % moins cher"></a>
-                    </li>
-                    <li class="am_nav__item">
-                        <a class="am_nav__link rayons" href="#">Rayons</a>
-                    </li>
-                    <li class="am_nav__item">
-                        <a class="am_nav__link market" href="#">Aurore Market</a>
-                    </li>
-                    <li class="am_nav__item">
-                        <a class="am_nav__link aide" href="#">Aide & contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="am_header__menu"> 
-                <a class="am_menu__item search" href="#"></a>
-                <a class="am_menu__item profile" href="#"></a>
-                <a class="am_menu__item wishlist" href="#"></a>
-                <a class="am_menu__item cart" href="#"></a>
+<body> 
+    <div class="am">
+        <header>
+            <div class="am_header">
+                <nav class="am_header__nav">
+                    <ul class="am_nav">
+                        <li class="am_nav__item">
+                            <h1>
+                                <a class="am_nav__link logo" href="#"><img class="am_logo" src="dist/img/aurore-market-logo.jpg" alt="Aurore Market | Magasin bio en ligne, votre magasin Bio en ligne jusqu'à 50 % moins cher"></a>
+                            </h1>
+                        </li>
+                        <li class="am_nav__item">
+                            <a class="am_nav__link rayons" data-toggle="am_band" href="#menu_rayons" aria-expanded="false" aria-controls="menu_reayons">Rayons</a>
+                            <div class="am_band" id="menu_rayons">
+                                <div class="am_band__content">
+                                    <div class="am_band__header">
+                                        <a class="am_nav__link logo" href="#"><img class="am_logo" src="dist/img/aurore-market-logo.jpg" alt="Aurore Market | Magasin bio en ligne, votre magasin Bio en ligne jusqu'à 50 % moins cher"></a>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="search" class="sr-only">Search bar</label>
+                                                <input type="text" class="am_band__search" placeholder="" aria-label="Search">
+                                            </div>
+                                        </form>
+                                        <button class="am_band__close"></button>
+                                    </div>
+                                    <div class="am_band__container">
+                                        <ul class="am_band__nav am_band__nav--level1">
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Vrac</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Epicerie salée</a>
+                                                <div class="am_band__header">
+                                                    <a href="" class="am_band__link am_band__link--back"></a>
+                                                    <p class="am_band__header-title">Epicerie salée</p>
+                                                </div>
+                                                <ul class="am_band__nav am_band__nav--level2">
+                                                    <li class="am_band__item">
+                                                        <a href="" class="am_band__link am_band__link--all-category">Voir toute l'épicerie salée</a>
+                                                    </li>
+                                                    <li class="am_band__item">
+                                                        <a href="" class="am_band__link am_band__link--dropdown">Pâtes, riz et féculents</a>
+                                                    </li>
+                                                    <li class="am_band__item">
+                                                        <a href="" class="am_band__link am_band__link--dropdown">Condiments, sauces & bouillons</a>
+                                                    </li>
+                                                    <li class="am_band__item">
+                                                        <a href="" class="am_band__link am_band__link--dropdown">Conserves, plats cuisinés & soupes</a>
+                                                    </li>
+                                                    <li class="am_band__item">
+                                                        <a href="" class="am_band__link am_band__link--dropdown">Apéritifs</a>
+                                                    </li>
+                                                    <li class="am_band__item">
+                                                        <a href="" class="am_band__link am_band__link--dropdown">Produits du monde</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Epicerie sucrée</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Boisson bio</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Bébé</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Maison & extérieur</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Entretien</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link am_band__link--icon">Hygiène, beauté & parapharmacie</a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link">
+                                                    Promos anti-gaspi
+                                                    <span class="icon"></span>
+                                                </a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link">
+                                                    C'est qui le patron ?
+                                                    <span class="icon"></span>
+                                                </a>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <a href="" class="am_band__link">Offrir</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="am_nav__item">
+                            <a class="am_nav__link market" href="#">Aurore Market</a>
+                        </li>
+                        <li class="am_nav__item">
+                            <a class="am_nav__link aide" href="#">Aide & contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="am_header__wrapper"> 
+                    <a class="am_menu__item search" href="#"></a>
+                    <a class="am_menu__item profile" href="#"></a>
+                    <a class="am_menu__item wishlist" href="#"></a>
+                    <a class="am_menu__item cart" href="#"></a>
+                </div>
             </div>
+        </header>
+        <div class="am_main">
+
         </div>
-    </header>
+        <div class="am_overlay"></div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="./dist/js/bundle.js"></script>
 </body>
 
 </html>

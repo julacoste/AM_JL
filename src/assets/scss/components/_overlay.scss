@@ -1,0 +1,17 @@
+// components/_overlay.scss 
+#{$project}_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
