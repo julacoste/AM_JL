@@ -47,12 +47,27 @@
                                                         <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_band__btn-show-all">Voir toute l'épicerie salée</button>
                                                     </li>
                                                     <li class="am_band__item">
-                                                        <div class="am_dropdown">
-                                                            <button type="button" class="am_btn am_btn--bottom am_btn--dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pâtes, riz et féculents</button>
+                                                        <div class="am_dropdown dropdown">
+                                                            <button type="button" id="dropdown_item-pates" class="am_btn am_btn--bottom am_btn--dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pâtes, riz et féculents</button>
                                                             <div class="am_dropdown__content" aria-labelledby="dropdown_item-pates">
-                                                                <p>yop</p>
+                                                                <button class="dropdown-item" type="button">Tous les produits pâtes, riz & féculents</button>
+                                                                <button class="dropdown-item" type="button">Pâtes</button>
+                                                                <button class="dropdown-item" type="button">Riz</button>
+                                                                <button class="dropdown-item" type="button">Légumes secs</button>
+                                                                <button class="dropdown-item" type="button">Couscous et semoules</button>
+                                                                <button class="dropdown-item" type="button">Graines et céréales</button>
+                                                                <button class="dropdown-item" type="button">Purées</button>
+                                                                <button class="dropdown-item" type="button">Sauces</button>
                                                             </div>
                                                         </div>
+                                                        <!-- <div class="dropdown am_dropdown">
+                                                            <button class="am_btn am_btn--bottom am_btn--dropdow dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Pâtes, riz & féculents
+                                                            </button>
+                                                            <div class="dropdown-menu am_dropdown__content" aria-labelledby="dropdownMenu">
+
+                                                            </div>
+                                                        </div> -->
                                                     </li>
                                                     <li class="am_band__item">
                                                         <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Condiments, sauces & bouillons</button>
@@ -127,7 +142,9 @@
         </div>
         <div class="am_overlay"></div>
     </div>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="module" src="./dist/js/bundle.js"></script>
 </body>
 

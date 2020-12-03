@@ -13,7 +13,7 @@ const browserSync = require('browser-sync').create();
 // Paths
 const files = {
     scssPath: 'src/assets/scss/**/*.scss',
-    jsPath: 'src/assets/js/**/*.js',
+    jsPath: 'src/assets/js/*.js',
     imgPath: 'src/assets/img/*.*',
     templatePath: '*.html'
 }

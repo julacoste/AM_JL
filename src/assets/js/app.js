@@ -20,6 +20,9 @@ $('.am_band__close, .am_overlay').on('click', function(e) {
 
     $band.removeClass('active');
     $overlay.removeClass('active');
+    $('.am_band__nav--level2').removeClass('active');
+    $('.am_band__nav--level1').removeClass('submenu-active');
+    $('.am_dropdown').removeClass('active');
 })
 
 // click on epicerie salee = hide nav lvl1 + show nav lvl 2
@@ -33,6 +36,9 @@ $('.am_band__nav--level1 .am_band__item .am_btn').on('click', function(e) {
 //click on btn dropdown = toggle display
 $('.am_btn--dropdown').on('click', function(e) {
     e.preventDefault();
-
-    $('.am_dropdown__content').dropdown();
+    if (!$('.am_dropdown').hasClass('active')) {
+        $('.am_dropdown').addClass('active');
+    } else {
+        $('.am_dropdown').removeClass('active');
+    }
 })
