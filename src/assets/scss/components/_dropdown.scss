@@ -13,4 +13,10 @@
             transition: max-height .5s ease-in-out, opacity 1s ease-in-out;
         }
     }
+
+    &__item {
+        &#{$project}_btn {
+            font-weight: 400;
+        }
+    }
 }
