@@ -57,6 +57,14 @@
         $char: "\e907";
     }
 
+    @if $filename == wishlist {
+        $char: "\e916";
+    }
+
+    @if $filename == cart {
+        $char: "\e919";
+    }
+
     @return $char;
 }
 
