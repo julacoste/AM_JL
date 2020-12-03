@@ -37,6 +37,14 @@
         $char: "\e90b";
     }
 
+    @if $filename == chevron-left {
+        $char: "\e90a";
+    }
+
+    @if $filename == chevron-bottom {
+        $char: "\e909"
+    }
+
     @return $char;
 }
 

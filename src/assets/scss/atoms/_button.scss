@@ -1,13 +1,12 @@
-// components/_link.scss
-a,
-.am_link {
-    color: $black-font;
-    cursor: pointer;
-    &:hover {
-        color: inherit;
-        text-decoration: none;
-    }
-
+// components/_btn.scss
+button,
+.am_btn {
+    display: block;
+    border: 0;
+    background-color: $white;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0 20px 10px;
     &--right,
     &--left,
     &--bottom {

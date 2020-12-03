@@ -16,7 +16,7 @@
         transform: translate( 0, 0, 0 );
         left: 0;
         opacity: 1;
-        width: 100%;
+        width: 33.333%;
     }
 
     &__header {
@@ -27,36 +27,42 @@
     &__content {
         background-color: $white;
         z-index: 2;
-        flex: 0 0 35%;
+        width: 100%;
         padding: 40px 0;
     }
 
     &__nav {
+        width: 100%;
         padding: 15px 0;
         list-style: none;
+        position: absolute;
+        left: 0;
+
+        &--level1 {
+            transition: all .5s ease-in-out;
+            &.submenu-active {
+                left: -100%;
+            }
+        }
+
+        &--level2 {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: all .5s ease-in-out;
+            &.active {
+                display: block;
+                left: 100%;
+                z-index: 3;
+            }
+        }
     }
 
     &__item {
         border-bottom: 1px solid $grey-light;
         &:last-child {
             border: 0;
-        }
-    }
-
-    &__link {
-        display: block;
-        padding: 20px 0 20px 10px;
-
-        &--icon {
-            position: relative;
-            @include icon(chevron-right);
-            &:before {
-                position: absolute;
-                right: 30px;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 10px;
-            }
         }
     }
 }
