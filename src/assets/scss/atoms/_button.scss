@@ -32,4 +32,25 @@ button,
     &--bottom {
         @include icon(chevron-bottom);
     }
+
+    &--search {
+        @include icon(search);
+        width: 50px;
+    }
+    
+    &--close {
+        @include icon(close);
+        width: 50px;
+    }
+
+    &--back-link {
+        @include icon(back-link);
+        display: inline-block;
+        width: auto;
+        padding: 20px 30px;
+        background-color: $white;
+        &:before {
+            padding-right: 10px;
+        }
+    }
 }

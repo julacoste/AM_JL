@@ -26,12 +26,19 @@ $('.am_band__close, .am_overlay').on('click', function(e) {
 })
 
 // click on epicerie salee = hide nav lvl1 + show nav lvl 2
-$('.am_band__nav--level1 .am_band__item .am_btn').on('click', function(e) {
+$('.am_band__nav--level1 .am_band__item .btn-js').on('click', function(e) {
     e.preventDefault();
     $('.am_band__nav--level2').addClass('active');
     $('.am_band__nav--level1').addClass('submenu-active');
 });
 
+//return on lvl 1 menu
+$('.am_band__nav-return').on('click', function(e) {
+    e.preventDefault();
+
+    $('.am_band__nav--level2').removeClass('active');
+    $('.am_band__nav--level1').removeClass('submenu-active');
+});
 
 //click on btn dropdown = toggle display
 $('.am_btn--dropdown').on('click', function(e) {

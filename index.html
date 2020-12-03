@@ -27,7 +27,10 @@
                                 <div class="am_band__content">
                                     <div class="am_band__header">
                                         <a class="am_nav__link logo" href="#"><img class="am_logo" src="dist/img/aurore-market-logo.jpg" alt="Aurore Market | Magasin bio en ligne, votre magasin Bio en ligne jusqu'à 50 % moins cher"></a>
-                                        <button class="am_band__close"></button>
+                                        <div class="am_band__header-options">
+                                            <button class="am_band__search am_btn am_btn--search"></button>
+                                            <button class="am_btn am_btn--close"></button>
+                                        </div>
                                     </div>
                                     <div class="am_band__container">
                                         <ul class="am_band__nav am_band__nav--level1">
@@ -35,39 +38,42 @@
                                                 <button type="button" class="am_btn am_btn--right" aria-haspopup="true" aria-expanded="false" >Vrac</button>
                                             </li>
                                             <li class="am_band__item">
-                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Epicerie salée</button>
-                                                <ul class="am_band__nav am_band__nav--level2">
-                                                    <li class="am_band__item">
-                                                        <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_band__btn-show-all">Voir toute l'épicerie salée</button>
-                                                    </li>
-                                                    <li class="am_band__item">
-                                                        <div class="am_dropdown dropdown">
-                                                            <button type="button" id="dropdown_item-pates" class="am_btn am_btn--bottom am_btn--dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pâtes, riz et féculents</button>
-                                                            <div class="am_dropdown__content" aria-labelledby="dropdown_item-pates">
-                                                                <button class="dropdown-item am_btn" type="button">Tous les produits pâtes, riz & féculents</button>
-                                                                <button class="dropdown-item am_btn" type="button">Pâtes</button>
-                                                                <button class="dropdown-item am_btn" type="button">Riz</button>
-                                                                <button class="dropdown-item am_btn" type="button">Légumes secs</button>
-                                                                <button class="dropdown-item am_btn" type="button">Couscous et semoules</button>
-                                                                <button class="dropdown-item am_btn" type="button">Graines et céréales</button>
-                                                                <button class="dropdown-item am_btn" type="button">Purées</button>
-                                                                <button class="dropdown-item am_btn" type="button">Sauces</button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="am_band__item">
-                                                        <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Condiments, sauces & bouillons</button>
-                                                    </li>
-                                                    <li class="am_band__item">
-                                                        <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Conserves, plats cuisinés & soupes</button>
-                                                    </li>
-                                                    <li class="am_band__item">
-                                                        <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Apéritifs</button>
-                                                    </li>
-                                                    <li class="am_band__item">
-                                                        <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Produits du monde</button>
-                                                    </li>
-                                                </ul>
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right btn-js">Epicerie salée</button>
+                                                <div class="am_band__nav--level2">
+                                                    <button class="am_band__nav-return am_btn am_btn--back-link">Epicerie salée</button>
+                                                    <ul class="am_band__nav">
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_band__btn-show-all">Voir toute l'épicerie salée</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <div class="am_dropdown dropdown">
+                                                                    <button type="button" id="dropdown_item-pates" class="am_btn am_btn--bottom am_btn--dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pâtes, riz et féculents</button>
+                                                                    <div class="am_dropdown__content" aria-labelledby="dropdown_item-pates">
+                                                                        <button class="dropdown-item am_btn" type="button">Tous les produits pâtes, riz & féculents</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Pâtes</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Riz</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Légumes secs</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Couscous et semoules</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Graines et céréales</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Purées</button>
+                                                                        <button class="dropdown-item am_btn" type="button">Sauces</button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Condiments, sauces & bouillons</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Conserves, plats cuisinés & soupes</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Apéritifs</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Produits du monde</button>
+                                                            </li>
+                                                    </ul>
+                                                </div>
                                             </li>
                                             <li class="am_band__item">
                                                 <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Epicerie sucrée</button>
@@ -88,19 +94,19 @@
                                                 <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Hygiène, beauté & parapharmacie</button>
                                             </li>
                                             <li class="am_band__item">
-                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_band__link">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn">
                                                     Promos anti-gaspi
                                                     <span class="icon"></span>
                                                 </button>
                                             </li>
                                             <li class="am_band__item">
-                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_band__link">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn">
                                                     C'est qui le patron ?
                                                     <span class="icon"></span>
                                                 </button>
                                             </li>
                                             <li class="am_band__item">
-                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_band__link">Offrir</button>
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn">Offrir</button>
                                             </li>
                                         </ul>
                                     </div>
