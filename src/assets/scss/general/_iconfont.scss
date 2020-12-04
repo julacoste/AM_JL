@@ -1,0 +1,80 @@
+// general/_iconfont.scss 
+@font-face {
+    font-family: 'icomoon';
+    src: url('#{$pathFonts}/iconfont/fonts/icomoon.eot?5kiojs');
+    src: url('#{$pathFonts}/iconfont/fonts/icomoon.eot?5kiojs#iefix') format('embedded-opentype'),
+    url('#{$pathFonts}/iconfont/fonts/icomoon.ttf?5kiojs') format('truetype'),
+    url('#{$pathFonts}/iconfont/fonts/icomoon.woff?5kiojs') format('woff'),
+    url('#{$pathFonts}/iconfont/fonts/icomoon.svg?5kiojs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin iconfont() {
+    font-family: 'icomoon';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+@function icon-char($filename) {
+    $char: "";
+
+    @if $filename == profile {
+        $char: "\e92a";
+    }
+
+    @if $filename == burger {
+        $char: "\e915";
+    }
+
+    @if $filename == chevron-right {
+        $char: "\e90b";
+    }
+
+    @if $filename == chevron-left {
+        $char: "\e90a";
+    }
+
+    @if $filename == chevron-bottom {
+        $char: "\e909";
+    }
+
+    @if $filename == search {
+        $char: "\e924";
+    }
+    
+    @if $filename == close {
+        $char: "\e920";
+    }
+
+    @if $filename == back-link {
+        $char: "\e907";
+    }
+
+    @if $filename == wishlist {
+        $char: "\e916";
+    }
+
+    @if $filename == cart {
+        $char: "\e919";
+    }
+
+    @return $char;
+}
+
+@mixin icon($filename, $insert: before) {
+    &:#{$insert} {
+        @include iconfont();
+        content: icon-char($filename);
+    }
+}
+
+.icon-profile {
+    @include icon(profile);
+}

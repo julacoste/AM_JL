@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aurore Market</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Aurore Market Test Julien LACOSTE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/styles.css" type="text/css">
+    <link rel="icon" type="image/png" href="./dist/img/favicon.ico" />
+</head>
+
+<body> 
+    <div class="am">
+        <header>
+            <div class="am_header">
+                <nav class="am_header__nav">
+                    <ul class="am_nav">
+                        <li class="am_nav__item">
+                            <h1>
+                                <a class="am_nav__link logo" href="#"><img class="am_logo" src="dist/img/aurore-market-logo.jpg" alt="Aurore Market | Magasin bio en ligne, votre magasin Bio en ligne jusqu'à 50 % moins cher"></a>
+                            </h1>
+                        </li>
+                        <li class="am_nav__item">
+                            <a class="am_nav__link rayons" data-toggle="am_band" href="#menu_rayons" aria-expanded="false" aria-controls="menu_reayons">Rayons</a>
+                            <div class="am_band" id="menu_rayons">
+                                <div class="am_band__content">
+                                    <div class="am_band__header">
+                                        <a class="am_nav__link logo" href="#"><img class="am_logo" src="dist/img/aurore-market-logo.jpg" alt="Aurore Market | Magasin bio en ligne, votre magasin Bio en ligne jusqu'à 50 % moins cher"></a>
+                                        <div class="am_band__header-options">
+                                            <button class="am_band__search am_btn am_btn--search"></button>
+                                            <button class="am_btn am_btn--close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="am_band__container">
+                                        <ul class="am_band__nav am_band__nav--level1">
+                                            <li class="am_band__item">
+                                                <button type="button" class="am_btn am_btn--right" aria-haspopup="true" aria-expanded="false" >Vrac</button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right btn-js">Epicerie salée</button>
+                                                <div class="am_band__nav--level2">
+                                                    <button class="am_band__nav-return am_btn am_btn--back-link">Epicerie salée</button>
+                                                    <ul class="am_band__nav">
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_band__btn-show-all">Voir toute l'épicerie salée</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <div class="am_dropdown dropdown">
+                                                                    <button type="button" id="dropdown_item-pates" class="am_btn am_btn--bottom am_btn--dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pâtes, riz et féculents</button>
+                                                                    <div class="am_dropdown__content" aria-labelledby="dropdown_item-pates">
+                                                                        <button class="am_dropdown__item am_btn" type="button">Tous les produits pâtes, riz & féculents</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Pâtes</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Riz</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Légumes secs</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Couscous et semoules</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Graines et céréales</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Purées</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Sauces</button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Condiments, sauces & bouillons</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Conserves, plats cuisinés & soupes</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Apéritifs</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Produits du monde</button>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right btn-js">Epicerie sucrée</button>
+                                                <div class="am_band__nav--level2">
+                                                    <button class="am_band__nav-return am_btn am_btn--back-link">Epicerie sucrée</button>
+                                                    <ul class="am_band__nav">
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_band__btn-show-all">Voir toute l'épicerie sucrée</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <div class="am_dropdown dropdown">
+                                                                    <button type="button" id="dropdown_item-pates" class="am_btn am_btn--bottom am_btn--dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bonbons, gateaux, sucreries</button>
+                                                                    <div class="am_dropdown__content" aria-labelledby="dropdown_item-pates">
+                                                                        <button class="am_dropdown__item am_btn" type="button">Tous les produits bonbons, gateaux & sucreries</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Cookies</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Patisseries</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Biscuits avec du chocolat</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Barres de céréales</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Miel</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Pâte à tartiner</button>
+                                                                        <button class="am_dropdown__item am_btn" type="button">Confiseries</button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Confiseries</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Gateaux</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Sucre</button>
+                                                            </li>
+                                                            <li class="am_band__item">
+                                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--bottom">Produits du monde</button>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Boisson bio</button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Bébé</button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Maison & extérieur</button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Entretien</button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn am_btn--right">Hygiène, beauté & parapharmacie</button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn">
+                                                    Promos anti-gaspi
+                                                    <span class="icon"></span>
+                                                </button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn">
+                                                    C'est qui le patron ?
+                                                    <span class="icon"></span>
+                                                </button>
+                                            </li>
+                                            <li class="am_band__item">
+                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="am_btn">Offrir</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="am_nav__item">
+                            <a class="am_nav__link market" href="#">Aurore Market</a>
+                        </li>
+                        <li class="am_nav__item">
+                            <a class="am_nav__link aide" href="#">Aide & contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="am_header__wrapper"> 
+                    <a class="am_menu__item search" href="#"></a>
+                    <a class="am_menu__item profile" href="#"></a>
+                    <a class="am_menu__item wishlist" href="#"></a>
+                    <a class="am_menu__item cart" href="#"></a>
+                </div>
+            </div>
+        </header>
+        <div class="am_main">
+
+        </div>
+        <div class="am_overlay"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./dist/js/bundle.js"></script>
+</body>
+
+</html>

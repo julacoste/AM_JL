@@ -1,0 +1,35 @@
+// components/_dropdown.scss
+#{$project}_dropdown {
+    &__content {
+        max-height: 0;
+        opacity: 0;
+        transition: max-height .5s ease-in-out, opacity .2s ease-in-out;
+    }
+
+    &.active {
+        #{$project}_dropdown__content {
+            opacity: 1;
+            max-height: 500px;
+            transition: max-height .5s ease-in-out, opacity 1s ease-in-out;
+        }
+
+        #{$project}_btn--bottom {
+            &:before {
+                transform: rotate(180deg) translateY(10px);
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+
+    #{$project}_btn--bottom {
+        &:before {
+            transition: all .5s ease-in-out;
+        }
+    }
+
+    &__item {
+        &#{$project}_btn {
+            font-weight: 400;
+        }
+    }
+}

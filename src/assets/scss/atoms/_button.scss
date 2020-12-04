@@ -1,0 +1,56 @@
+// atoms/_btn.scss
+button,
+.am_btn {
+    display: block;
+    border: 0;
+    background-color: $white;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0 20px 10px;
+    &--right,
+    &--left,
+    &--bottom {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 10px;
+        }
+    }
+
+    &--right {
+        @include icon(chevron-right);
+    }
+
+    &--left {
+        @include icon(chevron-left);
+    }
+
+    &--bottom {
+        @include icon(chevron-bottom);
+    }
+
+    &--search {
+        @include icon(search);
+        width: 50px;
+    }
+    
+    &--close {
+        @include icon(close);
+        width: 50px;
+    }
+
+    &--back-link {
+        @include icon(back-link);
+        display: inline-block;
+        width: auto;
+        padding: 20px 30px;
+        background-color: $white;
+        &:before {
+            padding-right: 10px;
+        }
+    }
+}
