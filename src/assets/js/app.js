@@ -29,7 +29,6 @@ $('.am_band__close, .am_overlay').on('click', function(e) {
 $('.am_band__nav--level1 .am_band__item .btn-js').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
-    console.log($this.children('.am_band__nav--level2'));
     $this.next('.am_band__nav--level2').addClass('active');
     $this.closest('.am_band__nav--level1').addClass('submenu-active');
 });
